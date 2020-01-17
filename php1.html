@@ -1,0 +1,34 @@
+
+<html>
+<title>First PhP</title>
+<head>
+	<script>
+		var variable1,variable2,variable3,element;
+		function Solution(id){
+			{if (id=='Pranav') {}
+			document.getElementById('Pranav').value="";
+			var variable1=document.getElementById('fname').value;
+			var variable2=document.getElementById('lname').value;
+			var variable3=variable1+" "+variable2;
+			document.getElementById('Pranav').value=variable3;
+			}
+			 /*var element = document.getElementById("Pranav");
+			 element.innerHTML = variable3;}*/
+
+		}
+		
+	</script>
+</head>
+<body>
+<form action="test.php" method="POST" enctype="multipart/form-data">
+First Name:<input type="text" name="fname" id="fname"><br>
+Last  Name:<input type="text" name="lname" id="lname" ><br>
+Full  Name:<input type="text" name="Fulname" id="Pranav" onclick="Solution('Pranav')" ><br>
+Image     :<input type="file" name="file" id="pic" >
+Text Area:<textarea name="comments" rows="5" cols="30" id="para1">
+</textarea><br>
+Telephone :<input type="tel" name="phone" pattern="[+91]{3}[1-9]{1}[0-9]{9}" maxlength="13">
+<input type="Submit" name="upload">
+</form>
+  </body>
+  </html>

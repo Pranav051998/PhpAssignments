@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--<script src="../js/demo.js"></script> -->
-    <script>
-         $(document).ready(function(){
-      $("#delete" ).click(function() {
-        alert( "Warning! Do you want to delete this blog" );
-      });
-    });
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+       $(".form1").submit(function(){
+        
+        var answer = confirm('Are you sure you want to delete this?');
+        if (answer)
+        {
+         console.log('yes');
+        }
+        else
+        {
+         console.log('cancel');
+         event.preventDefault();
+        }
+    
+  });
+});
     </script>
 </head>
 <body>

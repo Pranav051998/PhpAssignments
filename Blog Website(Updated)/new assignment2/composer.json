@@ -1,0 +1,13 @@
+{
+"autoload":
+  {
+    "psr-4":
+    {
+      "Connect\\": "Model",
+      "Interf\\": "Model"
+    }
+  },
+    "require": {
+        "google/apiclient": "2.1.0"
+    }
+}

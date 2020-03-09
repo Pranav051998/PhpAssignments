@@ -1,0 +1,348 @@
+*{
+	margin: 0px auto;
+}
+
+.navigation{
+	/*background-color: #03193d;*/
+  background: #3B008D;
+    color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+.body1{
+  margin-top: 20px;
+}
+
+.body{
+background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+.input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #0062cc;
+    color: #fff;
+}
+.note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+    font-weight: bolder;
+    line-height: 80px;
+}
+/*.navbar-nav{
+	display: inline;
+	float: right;
+}*/
+/*.container{
+	max-width: 300px;
+}*/
+.navigation h1{
+	display: inline;
+	color: white;
+}
+.navigation ul{
+	display: inline;
+}
+.navigation li{
+	float: right;
+	padding: 10px;
+	list-style-type: none;
+}
+.navigation a{
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+	padding: 7px;
+	margin: 5px 7px;	
+}
+.navigation a:hover{
+	background-color:orange;
+	border-radius: 8px 8px;
+}
+.table table,tr,th,td{
+	 margin: 10px auto;
+	 border: 1px solid black;
+	 border-collapse: collapse;
+
+}
+.table img{
+	height: 20vh;
+	width:20vh;
+}
+.addblog{
+	text-align:center;
+}
+#add{
+	background-color:black;
+	color: white;
+	border-radius: 10px;
+	padding: 10px; 
+}
+/*#edit{
+	background-color:black;
+	color: white;
+	border-radius: 10px;
+	padding: 10px; 
+}
+#delete{
+	background-color:black;
+	color: white;
+	border-radius: 10px;
+	padding: 10px; 
+}
+.update{
+	text-align: center;
+	margin:50px;
+}
+#editupdate{
+	background-color:black;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+}*/
+.border{
+	margin-top:150px;
+	float: left;
+	border:50px;
+}
+#registrationsubmit{
+	background-color:blue;
+	color: white;
+	border-radius: 10px;
+	padding: 10px
+}
+.adder {
+	float: right;
+	list-style-type: none;
+}
+.adder form{
+	display: inline;
+}
+.add{
+   margin: 5px;
+   background-color: inherit;
+   opacity: 0.5;
+   color:white;
+   font-weight: bolder;
+}
+.body1 {
+  background: #F1F3FA;
+}
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+.read{
+  text-align: center;
+  box-shadow: inset 0 2px 0px #dcffa6, 0 2px 5px #000;
+  background-color: black;
+  color: white;
+}
+.addblog{
+   margin-top:50px;
+}
+.form1{
+  display: inline-block;
+}
+.form{
+  display: inline;
+}
+

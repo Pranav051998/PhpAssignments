@@ -1,0 +1,120 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="/new assignment2/css/blog.css">
+	<script>
+/*$(document).ready(function(){
+
+	$('#captch_form').on('submit',function(event){
+		event.preventDefault();
+
+        $('#captcha_code').blur(function(){
+
+		var code = $('#captcha_code').val();
+		console.log(code);
+		if(code == '') {
+			alert('Enter Captcha Code');
+			$('#login').attr('disabled','disabled');
+		}
+		else {
+
+			$.ajax({
+
+				url:"http://localhost/new%20assignment2/check_code.php",
+           // url:"/new assignment2/check_code.php",
+            method:"POST",
+            data:{code:code},
+            success:function(data)
+             {
+              if(data == 'success')
+              {
+               $('#login').attr('disabled', false);
+              }
+              else
+              {
+               $('#login').attr('disabled', 'disabled');
+               alert('Invalid Code');
+              }
+             }
+
+            });
+
+            } 
+    });
+});
+
+});*/
+</script>
+</head>
+<body>
+	 <div class="navigation">
+                        <h1>&nbspPPRX</h1>
+                <ul> 
+                       <li><a href="/new assignment2/index.php/blog">Blogs</a></li>
+                       <li><a href="/new assignment2/index.php/Register">Register</a></li>
+                       
+                </ul>
+     </div>
+  <div class="body">
+    <div class="container">    	
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+		<div class="card-header">
+				<h3>Sign In</h3>
+				<div class="d-flex justify-content-end social_icon">
+					
+						<span><a class="fab fa-google-plus-square" href="../google.php"></a></span>
+				</div>
+			</div>
+			<form action="" method='POST' id='captch_form'>
+			<div class="card-body">
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" name="name">
+                    </div>
+
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="Password" name="password">
+					</div>
+
+                    <div class="input-group form-group">
+						<div class="input-group-prepend">
+							<img src="/new assignment2/captcha.php" id="captcha_image">
+						</div>
+					</div>
+
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+							<input type="text" name="captcha_code" id="captcha_code" >
+						</div>
+					</div>
+					<div class="form-group">
+                        <input type="submit" name="login" value="Log in" class="btn float-right login_btn" id="login">
+                        <input type="submit" name="register" id="button2" class="btn float-left login_btn" value="Sign Up">
+					</div>
+
+			</div>
+			</form>
+			
+	    </div>
+	</div>
+
+</body>
+</html>
+<!--href="../css/blog.css css link-->

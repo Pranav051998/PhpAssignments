@@ -11,6 +11,7 @@
             <div class="card" style='width:300px;height:100px'>
                 <?php $row['image'] = str_replace("..","",$row['image'])?><!--extra line -->
             <img class="card-img-top" src= <?php echo $row['image']?> alt='Card image'style='width:100%'>
+            <div class="box">
             <div class="card-body">
             <h5 class="card-title">Blog_No: <?php echo $row['blog_no'] ?></h5>
             <h5 class="card-title">Title:<?php echo $row['title'] ?></h4>
@@ -21,6 +22,7 @@
                 <input type='hidden' name='fetch' value=<?php echo $blog_no ?> >
             </form>
             </div>
+        </div>
             </div>
             </div>
             </div>

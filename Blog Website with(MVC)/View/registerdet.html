@@ -6,6 +6,67 @@
          <script src="/new assignment2/js/demo.js"></script>
      <!--<script src="../js/demo.js"></script>-->  
    <link rel="stylesheet" type="text/css" href="/new assignment2/css/blog.css"><!--my css-->
+<script>
+$(document).ready(function(){
+
+ $("#username").keyup(function(){
+ 
+   var name = $('#username').val();
+   if(name == ''){
+      alert("Please enter a username");
+   }
+
+   else{
+      $.ajax({
+
+         url:"../Ajaxvalidation.php",
+         method:"POST",
+         data:{code:name},
+         success:function(data)
+         {
+            if(data != 'Valid')
+            {
+            alert('Not Valid User-Name');
+            }
+            else if(data == 'Valid'){
+               alert("Valid");
+            }
+         }
+
+      }).fail(function(){
+         alert('fail');
+      });
+
+   }
+
+ });
+
+   $("#email").keyup(function(){
+
+      var email = $('#email').val();
+      if(email == ''){
+         alert("Please enter a email");
+      }
+      else{
+       $.ajax({
+            alert("In Ajax");
+            url:"../Ajaxvalidation.php",
+            method:"POST",
+            data:{code:email},
+            success:function(data)
+            {
+              if(data != 'Valid')
+              {
+               alert('Not Valid User-Name');
+              }
+            }
+         });
+
+      }
+   });
+
+}); 
+</script>
 </head>
 <body>
 
@@ -21,10 +82,10 @@
          <div class="row">
             <div class="col-md-6">
                <div class="form-group">
-                  <input type="text" name="email" pattern="[A-Za-z0-9]+@[A-za-z]+\.[A-Za-z]+" placeholder="Email" required>
+                  <input type="text" name="email" pattern="[A-Za-z0-9]+@[A-za-z]+\.[A-Za-z]+" placeholder="Email"  id="email" required>
                </div>
                <div class="form-group">
-                  <input type ="text" name="username" pattern="[A_Za-z]{4}[0-9]{4}" maxlength="8" placeholder="User-Name" required>
+                  <input type ="text" name="username" pattern="[A_Za-z]{4}[0-9]{4}" maxlength="8" placeholder="User-Name" id="username" required>
                </div>
                <div class="form-group">
                   <input type="Password" name="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password" required>

@@ -1,23 +1,25 @@
 
 <?php
   session_start();
-   require 'View/registerdet.html';
+  // require 'View/registerdet.html';
    require './vendor/autoload.php';
    use Interf\Template;
    use Connect\Connection;
    //require 'Model/connection.php';
-   //require '../View/registerdet.html';
+   require '../View/registerdet.html';
    //require '../Controller/connection.php';
 
    $obr = new Connection();
    $obr->create_database_connection();
    $connection = $obr->get_Connection();
 
+
+
   if(isset($_POST['submit'])){
    
    
     if((preg_match("/[A-Za-z0-9]+@[A-za-z]+\.[A-Za-z]+/",$_POST['email'])) && (preg_match("/[A_Za-z]{4}[0-9]{4}/",$_POST['username']))){
-      echo "hey";
+      
       $query1 = "select count(User_name) from login_details where User_name ='".$_POST['username']."'";
       $fetchquery1 = mysqli_query($connection, $query1);
       $check = mysqli_fetch_array($fetchquery1);
